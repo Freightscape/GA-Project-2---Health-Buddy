@@ -1,4 +1,6 @@
-# GA-Project-2-Health-Buddy
+# MyHealth (GA-Project-2)
+
+![Image 6-10-22 at 1 47 PM](https://user-images.githubusercontent.com/105219025/173123473-e1e8c932-cad4-4703-9161-7b6831bf0510.jpeg)
 
 Health Accountability Program
 
