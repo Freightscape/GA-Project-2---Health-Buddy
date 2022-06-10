@@ -1,4 +1,4 @@
-![Matchy-3](https://user-images.githubusercontent.com/105219025/173121995-a5e5eb39-0eac-4ecf-8307-779ae9d6f5f5.png)
+![Matchy-3](https://user-images.githubusercontent.com/105219025/173124453-0e450a73-11e9-4e7a-aa60-4551874b8bbb.jpeg)
 ![Image 6-10-22 at 1 47 PM](https://user-images.githubusercontent.com/105219025/173123473-e1e8c932-cad4-4703-9161-7b6831bf0510.jpeg)
 
 # MyHealth (GA-Project-2)
