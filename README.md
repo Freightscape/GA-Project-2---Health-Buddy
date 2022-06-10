@@ -1,4 +1,4 @@
-# GA-Project-2---Health-Buddy
+# GA-Project-2-Health-Buddy
 
 Health Accountability Program
 
@@ -6,11 +6,11 @@ Health Accountability Program
 
 # Are You Smarter!!
 
-**Premise:** Are you Smarter!! is an Educational Trivia Game that focuses on challenging it's end user with GA Curriculum related questions. Users are asked 10 questions and are scored on correctness.
+**Premise:** HealthBuddy exist a innovative way to give back to the world
 
 ## User Story
 
-With this Project I wanted to build a light and fun Trivia Game that that could serve in a mulipurpose capacity. This Educational Resource could be successively built on by GA. With small modifications, this Program could be made to Pop Quiz Students, and in it's Plain Vanilla, serve as a Codealong for Fundemental Skill building in HTML, CSS, Javascript (Vanilla), and DOM Manipulation. I really wanted to give something back to GA for all it's done. This game is intended to be Collaborative, Welcoming of Creativity, and Educationally Dynamic. Simple yet diverse in it's potential.
+Users will be able to sign-up, and login to the HealthBuddy Network and connect with Fitness, and Nutritional Coaches. Users will be able to
 
 ## Technologies Used
 
