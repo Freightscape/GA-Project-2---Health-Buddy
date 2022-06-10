@@ -1,12 +1,10 @@
 # MyHealth (GA-Project-2)
 
+![Matchy-3](https://user-images.githubusercontent.com/105219025/173121995-a5e5eb39-0eac-4ecf-8307-779ae9d6f5f5.png)
+
 ![Image 6-10-22 at 1 47 PM](https://user-images.githubusercontent.com/105219025/173123473-e1e8c932-cad4-4703-9161-7b6831bf0510.jpeg)
 
 Health Accountability Program
-
-![Matchy-3](https://user-images.githubusercontent.com/105219025/173121995-a5e5eb39-0eac-4ecf-8307-779ae9d6f5f5.png)
-
-![Matchy-2](https://user-images.githubusercontent.com/105219025/170496137-ebf70429-04ce-4ce4-b924-842f5524c4fa.png)
 
 # Are You Smarter!!
 
