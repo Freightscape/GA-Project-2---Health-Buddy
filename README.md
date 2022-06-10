@@ -18,13 +18,13 @@ Users will be able to sign-up, and login to the HealthBuddy Network and connect 
 
 ## Technologies Used
 
-**- HTML
-**- CSS
-**- Javascript
-**- DOM Manipulation
+**- HTML**
+**- CSS**
+**- Javascript**
+**- DOM Manipulation**
 
-**Backend:
-**- MongoDB
-\*\*- Atlas
+**Backend:**
+**- MongoDB**
+**- Atlas**
 
 **Entity Relationship Diagram**
