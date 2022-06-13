@@ -1,36 +1,57 @@
 ///////////////////////////////
 // Setting Up my Dependencies
 ///////////////////////////////
-
-require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const methodOverride = require("method-override");
-const mongoose = require("mongoose");
 const path = require("path");
+const ConsumedRouter = require("./controllers/consumeds");
+const UserRouter = require("./controllers/users");
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
+const { Store } = require("express-session");
 
 ///////////////////////////////
-// Pointing to my URL
+// Creating Express Application Object Bind Liquid Template Engine
 ///////////////////////////////
-const DATABASE_URL = process.env.DATABASE_URL;
+
+const app = require("liquid-express-views")(express(), {
+  root: [path.resolve(__dirname, "views/")],
+});
 
 ///////////////////////////////
-// Avoiding Deprication
+// Setting up Middleware
 ///////////////////////////////
-const CONFIG = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-};
+
+app.use(morgan("tiny"));
+app.use(methodOverride("_method"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.use(
+  session({
+    secret: process.env.SECRET,
+    store: MongoStore.create({ mongoUrl: process.env.DATABASE_URL }),
+    saveUninitialized: true,
+    resave: false,
+  })
+);
 
 ///////////////////////////////
-// Connecting to URL
+// Setting up Routes
 ///////////////////////////////
-mongoose.connect(DATABASE_URL, CONFIG);
+
+app.use("/consumeds", ConsumedRouter);
+app.use("/user", UserRouter);
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
 ///////////////////////////////
-// Connection Event Lsiteners
+// Server Listener
 ///////////////////////////////
-mongoose.connection
-  .on("open", () => console.log("Connected to Mongoose"))
-  .on("close", () => console.log("Disconnected from Mongoose"))
-  .on("error", (error) => console.log(error));
+
+const PORT = process.env.PORT;
+app.listen(PORT, () => {
+  console.log(`Listening on Port ${PORT}`);
+});
