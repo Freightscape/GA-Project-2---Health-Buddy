@@ -3,6 +3,41 @@
 
 # Health Accountability Program
 
+\*\*Add Ability to post to facebook and to instagram
+
+\*\*Make sure css is dynamic and can render consistently across all screens
+
+\*\*Milestone Badges for users who demonstrate consistency (Per meal Badge - Badge given when Meal budget is honored,
+
+Per day Badge - badge given when all meal budgets are honored durring the way
+
+Per week badge -
+Per month badge -
+
+Actual Weight Lost Badge - based on % Achieved of Set Target Weight Loss Goal set by User Badging: Bronze: 25%
+Silver: 50%
+Gold: 75%
+Champion Trophy: +100%)
+
+\*\*Paid subscription Feature via Paypal
+Subscription Models:
+Free 7 Day Trial
+Monthly: $5.99
+Annual: $59
+
+\*\*Signup Security Features
+(Not a Robot)
+
+\*\*Advertisements Setup only on non paid subscriptions
+
+\*\*About me Page
+
+\*\*Contact Us Page
+
+\*\*FAQ page
+
+\*\*Resources Page
+
 Let's get healthy with this fun Interactive Calorie Tracker, courtesy of General Assembly SEIR59 Student: Tiras P. Jordan.
 
 Getting healthy is no small undertaking, and having the tools and resources to accomplish your Goals is essential to consistently pursuing them. MyHealth is here to serve as that resource and tool, here you can track your caloric intake, from day to day consumption, so that you may accurately budget your intake.
