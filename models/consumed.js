@@ -14,15 +14,15 @@ const { Schema, model } = mongoose;
 
 // make consumed schema
 const consumedsSchema = new Schema({
-  Food: String,
-  Calories: Number,
-  Protien: Number,
-  Fat: Number,
-  Carbs: Number,
-  Satiating: Boolean,
-  Meal: String,
-  TotalCaloriesRemaining: Number,
-  EndOfDayWeight: Number,
+  food: String,
+  calories: Number,
+  protien: Number,
+  fat: Number,
+  carbs: Number,
+  satiating: Boolean,
+  meal: String,
+  totalCaloriesRemaining: Number,
+  endOfDayWeight: Number,
   username: String,
 });
 
