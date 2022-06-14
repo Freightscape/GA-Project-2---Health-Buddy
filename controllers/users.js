@@ -4,7 +4,7 @@
 
 const express = require("express");
 const User = require("../models/user");
-const bcrypt = require("brcryptjs");
+const bcrypt = require("bcrypt");
 
 ///////////////////////////////
 // Making the Create Route
