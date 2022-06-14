@@ -1,6 +1,6 @@
-///////////////////////////////
-// Setting Up my Dependencies
-///////////////////////////////
+/////////////////////////////////////////////
+// Import Our Dependencies
+/////////////////////////////////////////////
 const express = require("express");
 const morgan = require("morgan");
 const methodOverride = require("method-override");
@@ -11,22 +11,24 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const { Store } = require("express-session");
 
-///////////////////////////////
-// Creating Express Application Object Bind Liquid Template Engine
-///////////////////////////////
+/////////////////////////////////////////////////
+// Create our Express Application Object Bind Liquid Templating Engine
+/////////////////////////////////////////////////
 
 const app = require("liquid-express-views")(express(), {
   root: [path.resolve(__dirname, "views/")],
 });
 
-///////////////////////////////
-// Setting up Middleware
-///////////////////////////////
+// ### Register our Middleware
 
-app.use(morgan("tiny"));
-app.use(methodOverride("_method"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"));
+// ```js
+/////////////////////////////////////////////////////
+// Middleware
+/////////////////////////////////////////////////////
+app.use(morgan("tiny")); //logging
+app.use(methodOverride("_method")); // override for put and delete requests from forms
+app.use(express.urlencoded({ extended: true })); // parse urlencoded request bodies
+app.use(express.static("public")); // serve files from public statically
 app.use(
   session({
     secret: process.env.SECRET,
@@ -36,22 +38,21 @@ app.use(
   })
 );
 
-///////////////////////////////
-// Setting up Routes
-///////////////////////////////
-
-app.use("/consumeds", ConsumedRouter);
+////////////////////////////////////////////
+// Routes
+////////////////////////////////////////////
+app.use("/fruits", FruitRouter); // send all "/fruits" routes to fruit router
 app.use("/user", UserRouter);
 
 app.get("/", (req, res) => {
+  // res.send("your server is running... better catch it.");
   res.render("index");
 });
 
-///////////////////////////////
+//////////////////////////////////////////////
 // Server Listener
-///////////////////////////////
-
+//////////////////////////////////////////////
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
-  console.log(`Listening on Port ${PORT}`);
+  console.log(`Now listening on port ${PORT}`);
 });
