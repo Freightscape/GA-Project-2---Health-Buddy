@@ -41,7 +41,7 @@ app.use(
 ////////////////////////////////////////////
 // Routes
 ////////////////////////////////////////////
-app.use("/fruits", FruitRouter); // send all "/fruits" routes to fruit router
+app.use("/consumeds", ConsumedRouter); // send all "/fruits" routes to fruit router
 app.use("/user", UserRouter);
 
 app.get("/", (req, res) => {
