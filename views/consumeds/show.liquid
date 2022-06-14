@@ -1,0 +1,16 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+  <article>
+    <h2>
+      {{ consumed.food }} - {% if satiating == true %} This was filling. {% else
+      %} This was not filling. {% endif %}
+    </h2>
+    <h3>{{ consumed.calories }}</h3>
+    <a href="/consumeds/{{ consumed._id }}/edit"><button>Edit</button></a>
+    <form action="/consumeds/{{ consumed._id }}?_method=DELETE" method="POST">
+      <input type="submit" value="Delete" />
+    </form>
+    <a href="/consumeds/"><button>Back to Main</button></a>
+  </article>
+</div>
+{% endblock %}
