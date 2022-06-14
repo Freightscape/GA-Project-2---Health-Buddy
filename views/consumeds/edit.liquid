@@ -1,0 +1,77 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+  <form action="/consumeds/{{ consumed._id }}?_method=PUT" method="post">
+    <fieldset>
+      <legend>Edit {{ consumed.name }}</legend>
+      <label>
+        FOOD:<input
+          type="text"
+          name="food"
+          placeholder="enter name of food"
+          value="{{ consumed.food }}"
+        />
+      </label>
+      <label>
+        COLORIES:<input
+          type="number"
+          name="calories"
+          placeholder="enter the number of calories"
+          value="{{ consumed.calories }}"
+        />
+      </label>
+      <label>
+        PROTIEN:<input
+          type="number"
+          name="protien"
+          placeholder="enter the Total grams of protien"
+          value="{{ consumed.protien }}"
+        />
+      </label>
+      <label>
+        FAT:<input
+          type="number"
+          name="fat"
+          placeholder="enter the Total grams of fat"
+          value="{{ consumed.fat }}"
+        />
+      </label>
+      <label>
+        CARBS:<input
+          type="number"
+          name="carbs"
+          placeholder="enter the Total grams of carbs"
+          value="{{ consumed.carbs }}"
+        />
+      </label>
+      <label>
+        SATIETY (was this satiating):<input type="checkbox" name="satiating" {%
+        if consumed.satiating == true %} checked {% endif %} />
+      </label>
+      <label>
+        MEAL TYPE:<input
+          type="text"
+          name="meal"
+          placeholder="Breakfast, Snack, Lunch, or Dinner"
+          value="{{ consumed.meal }}"
+        />
+      </label>
+      <!-- <label>
+        CALORIC BUDGET:<input
+          type="number"
+          name="caloricBudget"
+          value="{{ consumed.carbs }}"
+        /> -->
+      <!-- Have to create a math function that will allow for a caloric budget to be created based on the goals specific to the end user.I.E.User says they want to lose 10 pounds in 100 days.That Translates to 1 pound every 10 days1 pound is 3500 calories350 calorie deficit per day.Based on height and weight of User:User height: 6'1"User weight: 200lbsUse math function to determine caloric budget for maintenance.So User is assigned 2700 calories for Maintenance (based on algorithm). So math function of maintenance - deficit = Total Caloric Budget -->
+      <!-- </label> -->
+      <label>
+        TOTAL CALORIES REMAINING:<input
+          type="number"
+          name="totalCaloriesRemaining"
+          value="{{ 10000 - consumed.calories }}"
+        />
+      </label>
+    </fieldset>
+    <input type="submit" value="Edit {{ fruit.name }}" />
+  </form>
+</div>
+{% endblock %}

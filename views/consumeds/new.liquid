@@ -1,0 +1,17 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+  <form action="/consumeds" method="post">
+    <fieldset>
+      <legend>Add your Food Entry</legend>
+      <label>
+        FOOD:<input type="text" name="name" placeholder="enter food name" />
+      </label>
+      <label>
+        MEAL:<input type="text" name="color" placeholder="enter meal type" />
+      </label>
+      <label> SATIATING:<input type="checkbox" name="satiating" /> </label>
+    </fieldset>
+    <input type="submit" value="submit food entry" />
+  </form>
+</div>
+{% endblock %}
