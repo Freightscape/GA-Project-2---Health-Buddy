@@ -28,3 +28,25 @@ Users will be able to sign-up, and login to the HealthBuddy Network and connect 
 **- Atlas**
 
 **Entity Relationship Diagram**
+
+
+**Future Add On Features**
+**-Add Ability to post to facebook and to instagram
+**-Make sure css is dynamic and can render consistently across all screens
+**-Milestone Badges for users who demonstrate consistency (Per meal Badge - Badge given when Meal budget is honored,
+**-Per day/week/month Badge - badge given when all meal budgets are honored durring the way
+**-Actual Weight Lost Badge - based on % Achieved of Set Target Weight Loss Goal set by User Badging: Bronze: 25%
+Silver: 50%
+Gold: 75%
+Champion Trophy: +100%)
+
+**-Paid subscription Feature via Paypal
+Subscription Models:
+Free 7 Day Trial
+Monthly: $5.99
+Annual: $59
+
+**-Signup Security Features
+(Not a Robot)
+
+**-Advertisements Setup only on non paid subscriptions
