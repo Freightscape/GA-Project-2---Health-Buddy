@@ -27,10 +27,13 @@ Users will be able to sign-up, and login to the HealthBuddy Network and connect 
 **- MongoDB**
 **- Atlas**
 
-**Entity Relationship Diagram**
+## Entity Relationship Diagram
+**Image Flow Models**
+![Image 6-17-22 at 10 42 AM](https://user-images.githubusercontent.com/105219025/174321060-1cc6e5e1-8ca3-4dcc-bc90-77785c7b2e2b.jpeg)
+![Image 6-17-22 at 10 40 AM](https://user-images.githubusercontent.com/105219025/174321098-2b763b1e-d975-4a20-849f-3352f66b358f.jpeg)
 
 
-**Future Add On Features**
+## Future Add On Features
 **-Add Ability to post to facebook and to instagram
 **-Make sure css is dynamic and can render consistently across all screens
 **-Milestone Badges for users who demonstrate consistency (Per meal Badge - Badge given when Meal budget is honored,
