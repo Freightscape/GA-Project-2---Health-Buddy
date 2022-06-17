@@ -52,3 +52,4 @@ Annual: $59
 (Not a Robot)
 
 **-Advertisements Setup only on non paid subscriptions
+![Image 6-17-22 at 11 04 AM](https://user-images.githubusercontent.com/105219025/174325135-00d1fffd-7296-4d00-93a8-09612acf2c33.jpeg)
